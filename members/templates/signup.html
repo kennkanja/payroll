@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+        <form action="">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="username">
+            <input type="date" placeholder="mm/dd/yy">
+            <input type="text" placeholder="Location">
+            <select name="gender">
+                <option value="none" selected>Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+            <input type="tel" placeholder="Phone Number">
+            <input type="number" placeholder="ID Number">
+            <input type="text" placeholder="Passion/Interest ">
+            <input type="text" placeholder="Skills">
+            <input type="text" placeholder="Professional Experience">
+            <select name="gender">
+                <option value="none" selected>Level of Education</option>
+                <option value="male">Diploma</option>
+                <option value="female">Degree</option>
+                <option value="other">Master</option>
+                <option value="other">PHD</option>
+
+            </select>
+           
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to these <a href="#"> Terms  & Conditions</a></label>
+        </div>
+        <button>Sign Up</button>
+        <div class="member">
+            Already a member? <a href="login.html"> Login Here</a>
+        </div>
+    </div>
+    
+</body>
+</html>
